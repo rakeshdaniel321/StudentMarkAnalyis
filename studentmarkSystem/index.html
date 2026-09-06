@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Mark System</title>
+    <script src="app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<body class="bg-black">
+    <main class="flex items-center justify-center ">
+
+        <div class="flex items-center justify-center flex-col gap-3 mt-10 bg-white  w-96 shadow-x1/30 rounded-xl">
+            <h1
+                class=" bg-black text-white text-shadow-lg/30 w-96 h-16 flex items-center justify-center font-bold text-xl md:text-2xl  ">
+                Student Mark System</h1>
+            <input class="rounded-md border-red-300 outline-none bg-white text-red-600 font-medium font-medium" id="num1" type="number" placeholder="Enter Tamil Mark " class="">
+            <input class="rounded-md border-red-300 outline-none bg-white text-red-600 font-medium font-medium" id="num2" type="number" placeholder="Enter English Mark" class="myinput">
+            <input class="rounded-md border-red-300 outline-none bg-white text-red-600 font-medium font-medium" id="num3" type="number" placeholder="Enter Subject 3" class="myinput">
+            <input class="rounded-md border-red-300 outline-none bg-white text-red-600 font-medium font-medium" id="num4" type="number" placeholder="Enter Subject 4" class="myinput">
+            <input class="rounded-md border-red-300 outline-none bg-white text-red-600 font-medium font-medium mb-5" id="num5" type="number" placeholder="Enter Subject 5" class="myinput">
+            <button class='bg-blue-700 rounded-lg text-white py-2 px-4 hover:bg-green-600 hover:border-solid border-green-600 hover:border-2' onclick="sum()">Calculate Sum</button>
+            <p  class="font-medium" id="result"> Result: </p>
+            <button class='bg-green-700 rounded-lg text-white py-2 px-4 hover:bg-purple-600 hover:border-solid border-purple-600 hover:border-2' onclick="avg()">Calculate Average</button>
+            <p class="font-medium" id="average"> Average: </p>
+            <button class='bg-purple-700 rounded-lg text-white py-2 px-4 hover:bg-red-600 hover:border-solid border-red-600 hover:border-2' onclick="grade()">Calculate Grade</button>
+            <p  class="mb-5 font-medium"id="grade"> Grade: </p>
+        </div>
+
+    </main>
+</body>
+
+</html>
